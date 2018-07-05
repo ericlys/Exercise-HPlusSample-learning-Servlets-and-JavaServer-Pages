@@ -20,7 +20,10 @@
         <url-pattern>/getServlet</url-pattern>
     </servlet-mapping>
 
-
+    <context-param>
+        <param-name>dbURL</param-name>
+        <param-value>jdbc:mysql://localhost:3306/hplus</param-value>
+    </context-param>
 
 
     <servlet>
