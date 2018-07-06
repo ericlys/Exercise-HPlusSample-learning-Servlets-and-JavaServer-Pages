@@ -4,11 +4,14 @@
            xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 		  http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"
  version="4.0">
-    <display-name>HPlusSample</display-name>
 
     <servlet>
         <servlet-name>GetServlet</servlet-name>
         <servlet-class>com.test.servlets.GetServlet</servlet-class>
+        <init-param>
+            <param-name>URL</param-name>
+            <param-value>http://weatherservice.com</param-value>
+        </init-param>
     </servlet>
 
     <servlet-mapping>
@@ -17,7 +20,10 @@
         <url-pattern>/getServlet</url-pattern>
     </servlet-mapping>
 
-
+    <context-param>
+        <param-name>dbURL</param-name>
+        <param-value>jdbc:mysql://localhost:3306/hplus</param-value>
+    </context-param>
 
 
     <servlet>

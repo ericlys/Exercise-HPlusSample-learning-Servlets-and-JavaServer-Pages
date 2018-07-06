@@ -1,3 +1,7 @@
+<%@ page import="com.test.beans.Product" %>
+<%@ page import="java.util.List" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.Iterator" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,30 +49,30 @@
 					active lifestyles</em>.
 			</p>
 			<p>
-				<span id="size">Items in Cart: {6}</span>
+				<span id="size">Items in Cart: 0</span>
 			</p>
 		</div>
+
+
+
 		<div class="productContainer">
-			<form method="get" action="addProducts">
-
+			<!-- display products through scriptlet and expression -->
+			<%
+				List<Product> products = (ArrayList) request.getAttribute ("products");
+				Iterator<Product> iterator = products.iterator ();
+				while(iterator.hasNext ()){
+					Product product = iterator.next (); %>
+			<from>
 				<div class="productContainerItem">
-					<img id="pic1" src="{0}"> <input type="text" name="product"
-						value="{3}"><br />
+					<img id="pic1" src="<%=product.getProductImgPath()%>"> <input type="text" name="product"
+						value="<%=product.getProductName()%>"><br/>
 					<button>Add to Cart</button>
 				</div>
+			</from>
+			<%
+				}
+			%>
 
-
-				<div class="productContainerItem">
-					<img id="pic2" src="{1}"> <input type="text" name="product"
-						value="{4}"><br />
-					<button>Add to Cart</button>
-				</div>
-				<div class="productContainerItem">
-					<img id="pic3" src="{2}"> <input type="text" name="product"
-						value="{5}"><br />
-					<button>Add to Cart</button>
-				</div>
-			</form>
 		</div>
 	</section>
 	<!-- #products -->
