@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-<p>Sorry, some error ocurred, please try again later</p>
+<p>Sorry, some error occurred, please try again later</p>
 <%=exception%>
 </body>
 </html>

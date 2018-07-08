@@ -45,10 +45,9 @@
 	</section>
 	<section id="login" class="section">
 		<div class="container tagline">
-			<% if(request.getAttribute("error")!=null){ %>
-			<em><%=request.getAttribute("error")%></em><br />
-			<%} %>
-
+			 <%if(request.getAttribute ("error")!=null){%>
+			<%= request.getAttribute("error")%></br>
+			<%}%>
 			<em>LOGIN USER</em>
 			<form action="login" method="post">
 				<label>Username</label> <input type="text" name="username"
