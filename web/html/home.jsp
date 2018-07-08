@@ -20,8 +20,8 @@
 				<ul class="navbar">
 					<li><a href="home">home</a></li>
 					<li><a href="orderHistory">order history</a></li>
-					<!-- <li><a href="viewProfile">view my profile</a></li> -->
-					<li><a href='<%=response.encodeURL("viewProfile")%>'>view
+					<!--<li><a href="viewProfile">view my profile</a></li> -->
+					<li><a href='<%=response.encodeURL("getProfileDetails")%>'>view
 							my profile</a></li>							
 					<li><a href='logout'>logout</a></li>
 					<li><a href="redirect">linkedIn</a></li>

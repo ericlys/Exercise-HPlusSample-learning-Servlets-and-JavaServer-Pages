@@ -250,14 +250,14 @@
         <p class="legal">H+ Sport is a fictitious brand created by
             lynda.com solely for the purpose of training. All products and
             people associated with H+ Sport are also fictitious. Any resemblance
-            to real brands, products, or people is purely coincidental.
+            to real brands, products, or people is purely coinidental.
             Information provided about the product is also fictitious and should
             not be construed to be representative of actual products on the
             market in a similar product category.</p>
     </div>
     <!-- container -->
 </footer>
-<!-- footer -->
+<!-- footer --> ff
 
 
 </body>
